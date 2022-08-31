@@ -266,7 +266,7 @@ namespace murrayju.ProcessExtensions
 Add-Type -ReferencedAssemblies 'System', 'System.Runtime.InteropServices' -TypeDefinition $Source -Language CSharp 
 
 # The file must be downloaded in the system context and unblocked before launching the user context
-Invoke-WebRequest -Uri 'https://github.com/rodneyviana/ODSyncService/raw/master/Binaries/PowerShell/OneDriveLib.dll' -OutFile 'C:\Users\Public\OneDriveLib.dll'
+Invoke-WebRequest -Uri 'https://github.com/eneerge/NAble-RMM-Check-OneDrive-Status/raw/main/OneDriveLib.dll' -OutFile 'C:\Users\Public\OneDriveLib.dll'
 Unblock-File "C:\Users\Public\OneDriveLib.dll"
 
 # This script block runs in the user context
